@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { MenuComponent } from './shared/menu/menu.component';
+import {RouterConfig} from './router.config';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { MenuComponent } from './shared/menu/menu.component';
     MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(RouterConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
