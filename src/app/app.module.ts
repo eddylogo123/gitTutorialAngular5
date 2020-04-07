@@ -8,6 +8,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import {RouterConfig} from './router.config';
 import {RouterModule} from '@angular/router';
+import { NotificationsComponent } from './shared/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {RouterModule} from '@angular/router';
     HomeComponent,
     LoginComponent,
     RegistroComponent,
-    MenuComponent
+    MenuComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
