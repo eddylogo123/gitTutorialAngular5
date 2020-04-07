@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Subject} from 'rxjs'/Subject;
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,7 @@ import {Subject} from 'rxjs'/Subject;
 export class NotificationService {
 
   private subject = new Subject<any>();
-  public emiteer = this.subject.asObservable();
+  public emiter = this.subject.asObservable();
   constructor() { }
 
   show(tipo, mensaje){

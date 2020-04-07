@@ -9,6 +9,7 @@ import { MenuComponent } from './shared/menu/menu.component';
 import {RouterConfig} from './router.config';
 import {RouterModule} from '@angular/router';
 import { NotificationsComponent } from './shared/notifications/notifications.component';
+import {NotificationService} from './shared/notification.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { NotificationsComponent } from './shared/notifications/notifications.com
     BrowserModule,
     RouterModule.forRoot(RouterConfig)
   ],
-  providers: [],
+  providers: [
+    NotificationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
